@@ -4,6 +4,7 @@ import { Header } from "./header";
 import { Footer } from "./footer";
 import layoutData from "../content/global/index.json";
 import { Theme } from "./theme";
+import Navbar from "./capoera/Navbar/Navbar";
 
 export const Layout = ({ rawData = "", data = layoutData, children }) => {
   return (
@@ -40,8 +41,9 @@ export const Layout = ({ rawData = "", data = layoutData, children }) => {
             data.theme.font === "sans" && "font-sans"
           }`}
         >
-          <Header data={data?.header} />
-          <div className="flex-1 text-gray-800 bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 flex flex-col">
+          {/*<Header data={data?.header} />*/}
+          <Navbar/>
+          <div className="flex-1 min-h-screen bg-white flex flex-col">
             {children}
           </div>
           <Footer
