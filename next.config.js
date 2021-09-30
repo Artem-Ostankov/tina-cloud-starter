@@ -8,7 +8,7 @@ module.exports = withBundleAnalyzer(withSvgr({
     return [
       {
         source: "/",
-        destination: "/",
+        destination: "/home",
       },
     ];
   },

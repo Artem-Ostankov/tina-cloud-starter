@@ -19,7 +19,7 @@ const Navbar: FC = () => (
           <div className="flex justify-between h-16">
             <div className="flex">
               <div className="flex-shrink-0 flex items-center">
-                <img className="block h-8 w-auto" src="/logo/Rose-Small.png" alt="Workflow" />
+                <img className="block h-8 w-auto" src="/Diagram.png" alt="Workflow" />
                 <span className="block ml-3 text-primary">Capoeira Rosenheim</span>
                 {/*<img*/}
                 {/*  className="hidden sm:block h-8 w-auto"*/}
